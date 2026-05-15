@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 100%;
+  color: #fff;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to top left, #093145, #136791);
+}
+
+.show-modal {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #fff;
+  color: #2e3138;
+  border: none;
+  margin: 5rem 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.show-modal:focus-visible {
+  outline: 2px solid #136791;
+  outline-offset: 3px;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: #fff;
+  color: #2e3138;
+  padding: 5rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.close-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-size: 3rem;
+  background: none;
+  color: #2e3138;
+  border: none;
+  cursor: pointer;
+}
+
+.close-modal:focus-visible {
+  outline: 2px solid #136791;
+  outline-offset: 3px;
+}
+
+.modal h2 {
+  margin-bottom: 1.25rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.hidden {
+  display: none;
+}
